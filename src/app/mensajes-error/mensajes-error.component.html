@@ -1,0 +1,3 @@
+<div *ngIf="shouldShowErrors()" class="validacion-campo">
+  <span style="color: red" *ngFor="let error of listOfErrors()"><i class="fa fa-exclamation-circle"></i>{{error}}</span>
+</div>

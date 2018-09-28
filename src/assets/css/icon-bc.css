@@ -1,0 +1,188 @@
+@font-face {
+  font-family: 'bancolombia';
+  src:  url('../fonts/bancolombia.eot?nkzqgv');
+  src:  url('../fonts/bancolombia.eot?nkzqgv#iefix') format('embedded-opentype'),
+    url('../fonts/bancolombia.ttf?nkzqgv') format('truetype'),
+    url('../fonts/bancolombia.woff?nkzqgv') format('woff'),
+    url('../fonts/bancolombia.svg?nkzqgv#bancolombia') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-bc {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'bancolombia' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-informacion:before {
+  content: "\e921";
+  color: #004289;
+}
+.icon-seguridad:before {
+  content: "\e900";
+  color: #0b8043;
+}
+.icon-sms .path1:before {
+  content: "\e901";
+  color: rgb(252, 206, 0);
+}
+.icon-sms .path2:before {
+  content: "\e902";
+  margin-left: -0.8095703125em;
+  color: rgb(255, 255, 255);
+}
+.icon-sms .path3:before {
+  content: "\e903";
+  margin-left: -0.8095703125em;
+  color: rgb(0, 67, 140);
+}
+.icon-sms .path4:before {
+  content: "\e904";
+  margin-left: -0.8095703125em;
+  color: rgb(0, 66, 137);
+}
+.icon-sms .path5:before {
+  content: "\e905";
+  margin-left: -0.8095703125em;
+  color: rgb(255, 255, 255);
+}
+.icon-sms .path6:before {
+  content: "\e906";
+  margin-left: -0.8095703125em;
+  color: rgb(255, 255, 255);
+}
+.icon-sms .path7:before {
+  content: "\e907";
+  margin-left: -0.8095703125em;
+  color: rgb(255, 255, 255);
+}
+.icon-sms .path8:before {
+  content: "\e908";
+  margin-left: -0.8095703125em;
+  color: rgb(255, 255, 255);
+}
+.icon-sms .path9:before {
+  content: "\e909";
+  margin-left: -0.8095703125em;
+  color: rgb(221, 0, 33);
+}
+.icon-sms .path10:before {
+  content: "\e90a";
+  margin-left: -0.8095703125em;
+  color: rgb(253, 214, 0);
+}
+.icon-sms .path11:before {
+  content: "\e90b";
+  margin-left: -0.8095703125em;
+  color: rgb(0, 66, 137);
+}
+.icon-wifi:before {
+  content: "\e90c";
+  color: #00438c;
+}
+.icon-pc .path1:before {
+  content: "\e90d";
+  color: rgb(0, 66, 137);
+}
+.icon-pc .path2:before {
+  content: "\e90e";
+  margin-left: -1.298828125em;
+  color: rgb(0, 66, 137);
+}
+.icon-pc .path3:before {
+  content: "\e90f";
+  margin-left: -1.298828125em;
+  color: rgb(253, 214, 0);
+}
+.icon-pc .path4:before {
+  content: "\e910";
+  margin-left: -1.298828125em;
+  color: rgb(253, 214, 0);
+}
+.icon-pc .path5:before {
+  content: "\e911";
+  margin-left: -1.298828125em;
+  color: rgb(253, 214, 0);
+}
+.icon-pc .path6:before {
+  content: "\e912";
+  margin-left: -1.298828125em;
+  color: rgb(253, 214, 0);
+}
+.icon-logo-bc .path1:before {
+  content: "\e913";
+  color: rgb(246, 246, 247);
+}
+.icon-logo-bc .path2:before {
+  content: "\e914";
+  margin-left: -0.900390625em;
+  color: rgb(255, 255, 255);
+}
+.icon-logo-bc .path3:before {
+  content: "\e915";
+  margin-left: -0.900390625em;
+  color: rgb(221, 0, 33);
+}
+.icon-logo-bc .path4:before {
+  content: "\e916";
+  margin-left: -0.900390625em;
+  color: rgb(253, 214, 0);
+}
+.icon-logo-bc .path5:before {
+  content: "\e917";
+  margin-left: -0.900390625em;
+  color: rgb(0, 66, 137);
+}
+.icon-position:before {
+  content: "\e918";
+  color: #00438c;
+}
+.icon-chat .path1:before {
+  content: "\e919";
+  color: rgb(0, 66, 137);
+}
+.icon-chat .path2:before {
+  content: "\e91a";
+  margin-left: -0.9052734375em;
+  color: rgb(255, 255, 255);
+}
+.icon-chat .path3:before {
+  content: "\e91b";
+  margin-left: -0.9052734375em;
+  color: rgb(255, 255, 255);
+}
+.icon-chat .path4:before {
+  content: "\e91c";
+  margin-left: -0.9052734375em;
+  color: rgb(255, 255, 255);
+}
+.icon-chat .path5:before {
+  content: "\e91d";
+  margin-left: -0.9052734375em;
+  color: rgb(255, 255, 255);
+}
+.icon-chat .path6:before {
+  content: "\e91e";
+  margin-left: -0.9052734375em;
+  color: rgb(221, 0, 33);
+}
+.icon-chat .path7:before {
+  content: "\e91f";
+  margin-left: -0.9052734375em;
+  color: rgb(253, 214, 0);
+}
+.icon-chat .path8:before {
+  content: "\e920";
+  margin-left: -0.9052734375em;
+  color: rgb(0, 66, 137);
+}

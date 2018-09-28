@@ -1,0 +1,110 @@
+<block-ui [template]="blockTemplate">
+<div class="nav-head">
+    <div class="back-nav mobile">
+        <div class="container">
+            <div class="row menu-mobile d-sm-none">
+                <div class="col-9">
+                    Menu
+                </div>
+                <div class="col-2">
+                    <i class="fa fa-close col close-mobile" style="font-size:24px"></i>
+                </div>
+            </div>
+            <div class="row info-xs d-sm-none">
+                <div class="col-12">
+                    Tu Plan
+                </div>
+                <!-- <div class="col-12 tipo-plan-xs">
+                    <span>Plan Nómina</span>
+                </div> -->
+            </div>
+            <!-- <div class="row">
+                <div class="col-12">
+                    <hr>
+                </div>
+            </div> -->
+            <div class="row">
+                <div class="col mal-15px">
+                    <ul class="nav">
+                        <li class="nav-item current">
+                            <a class="nav-link" href="#">Para Ti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Para Empresas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Acerca de Bancolombia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Negocios Especializados <i class="fa fa-caret-right font-size11"></i></a>
+
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt20 xs-mt0">
+            <div class="col">
+                <img class="logo-bancolombia" src="assets/img/logoBancolombia.png" />
+            </div>
+            <!-- <div class="col tipo-plan d-none d-sm-block">
+                <span>Plan Nómina</span>
+            </div> -->
+            <div class="col icon-menu-responsive d-block d-sm-none">
+                <button type="button" class="btn btn-outline-primary">
+                    <i class="fa fa-bars"></i><span> Menu</span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <div class="jumbotron row-header mt15">
+        <!--     Main component for a primary marketing message or call to action -->
+    </div>
+</div>
+<section>
+    <router-outlet></router-outlet>
+</section>
+<div class="copyright">
+    <div class="container">
+        <p>
+            Copyright © <span id="year"></span> Grupo Bancolombia.
+        </p>
+    </div>
+</div>
+<style>
+    .btn-primary {
+        width: 200px;
+        height: 45px;
+        font-size: 14px;
+        background-color: #00448c;
+        cursor: pointer;
+    }
+</style>
+<div class="container contenido abreCuenta">
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="row mt30 justify-content-center">
+                        <div class="col col-sm-10">
+                            <h3 class="blue">Lo sentimos, tu sesión ha expirado! Te invitamos a iniciar de nuevo el proceso.</h3>
+                        </div>
+                    </div>
+                    <div class="row mt30">
+                        <div class="col text-center">
+                            <button type="button" class="btn btn-primary" (click)="irComparador()">Aceptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</block-ui>

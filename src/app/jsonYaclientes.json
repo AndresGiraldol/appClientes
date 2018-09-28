@@ -1,0 +1,24 @@
+{
+    "dataCliente": [
+        {
+            "nombre": "Alvaro Yesid Meneses Caballero",
+            "cedula": 1102351246,
+            "genero": "Masculino",
+            "estadoCivil": "Viudo",
+            "numeroCelular": "",
+            "correoElectronico": "aymenese@co.ibm.com",
+            "pais":"colombia",
+            "ciudadDepartamento":"Piedecuesta",
+            "direccion": "Calle falsa 123",
+            "totalIngresosMensuales":999999,
+            "paisOrigenRecursos":"Peru",
+            "ciudadOrigenRecursos":"Lima",
+            "gastosMensuales":888888,
+            "activos":777777,
+            "pasivos":666666,
+            "operacionMonedaExtranjera":"No",
+            "declaraRenta":"No"
+            
+    }
+  ]
+}

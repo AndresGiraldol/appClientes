@@ -1,0 +1,119 @@
+<div class="container contenido abreCuenta">
+    <form #abreCuentaForm="ngForm">
+        <div class="row justify-content-center text-center">
+            <div class="col col-sm-12 col-md-12 titulo-tipo">
+                <h1>Queremos conocerte</h1>
+                <p>Compartános esta información para una mejor experiencia</p>
+            </div>
+        </div>
+        <div class="row formulario justify-content-center text-center">
+            <div class="col col-sm-12 col-md-12 col-lg-12">
+                <div class="row">
+                    <div class="col-6 text-left">
+                        <label for="nombreEmpresa" class="control-label">Tipo de documento</label>
+                    </div>
+                    <div class="col-6 text-left">
+                        <label for="nombreEmpresa" class="control-label">Número de documento</label>
+                    </div>
+                </div>
+                <div class="row tDoc">
+                    <div class="col-12 col-sm-5 col-md-6 col-lg-6">
+                        <select id="tipoDocumento" name="tipoDocumento" class="form-control" required [(ngModel)]="abrecuentaCampos.tipoDocumento"
+                            #tipoDocumento="ngModel" autocomplete="off" autocorrect="off" autocapitalize="off">
+                            <option value="" disabled="true" [selected]="!abrecuentaCampos.tipoDocumento">Seleccionar</option>
+                            <option *ngFor="let p of catalgoTipoDocumento" [value]="p.id">{{p.descripcion}}</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-sm-5 col-md-6 col-lg-6 xs-mt30">
+                        <div class="money-input">
+                            <span class="addon">#</span>
+                            <input appNumberInputOnly type="text" id="numeroDocumento" minlength="5" maxlength="12" name="numeroDocumento" class="form-control"
+                                required [(ngModel)]="abrecuentaCampos.numeroDocumento" #numeroDocumento="ngModel" autocomplete="off"
+                                autocorrect="off" autocapitalize="off">
+                        </div>
+                        <app-mensajes-error [control]="numeroDocumento"></app-mensajes-error>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-5 col-md-6 col-lg-6 text-left">
+                        <label for="numeroCelular" class="control-label">Número de Celular </label>
+                        <!-- <div class="input-group"> -->
+                            <!-- <span class="input-group-addon bg-white border-right-0">
+                                <img src="assets/img/icon-col.JPG" style="width: 18px"><i class="fa fa-sort-down" style="margin-top: -5px;
+                                padding-left: 5px;"></i><span style="font-size: 12px;
+                                padding-left: 5px; color: #878688;">+57</span>
+                            </span> -->
+                            <input appCelularInputOnly type="text" id="numeroCelular" minlength="10" maxlength="10" name="numeroCelular" class="form-control"
+                                required [(ngModel)]="abrecuentaCampos.numeroCelular" #numeroCelular="ngModel" autocomplete="off"
+                                autocorrect="off" autocapitalize="off">
+                        <!-- </div> -->
+                        <app-mensajes-error [control]="numeroCelular"></app-mensajes-error>
+                    </div>
+                    <div class="col-12 col-sm-5 col-md-6 col-lg-6 text-left">
+                        <label for="correoElectronico" class="control-label">Correo electrónico</label>
+                        <input pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" type="text" id="correoElectronico" name="correoElectronico" class="form-control"
+                            required [(ngModel)]="abrecuentaCampos.correoElectronico" #correoElectronico="ngModel" autocomplete="off"
+                            autocorrect="off" autocapitalize="off">
+                        <app-mensajes-error [control]="correoElectronico"></app-mensajes-error>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <re-captcha [(ngModel)]="abrecuentaCampos.captcha" size="invisible" name="captcha" (resolved)="resolved($event)" siteKey="6LekUBkUAAAAAK1R08HErgTg0ePyPyHxR_lrSkLe"
+                        #captchaRef="reCaptcha"></re-captcha>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="row button-next-prev">
+        <div class="col-12 col-md-7 next">
+            <button type="button" class="btn btn-primary" (click)="irCliente2()" [disabled]="abreCuentaForm.invalid">Continuar</button>
+        </div>
+    </div>
+</div>
+<style>
+    .btn-primary {
+        width: 200px;
+        height: 45px;
+        font-size: 14px;
+        background-color: #00448c;
+        cursor: pointer;
+    }
+
+    .red {
+        color: red;
+    }
+
+    .mb20 {
+        margin-bottom: 20px;
+    }
+
+</style>
+<div class="container contenido abreCuenta">
+    <!-- The Modal -->
+    <div class="modal" id="errorConsulta">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="row justify-content-center mt40">
+                        <div class="col col-sm-8">
+                            <div class="row-table">
+                                <div class="col-cell">
+                                    <img style="width: 32px" src="assets/img/error.png">
+                                </div>
+                                <div class="col-cell">
+                                    <p class="red">{{mensajeFallo}}</p>
+                                </div>
+                            </div>
+                            <div class="col text-center mt40 mb20">
+                                <button type="button" class="btn btn-primary" (click)="irComparadorError()">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
